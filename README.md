@@ -89,13 +89,13 @@ OPENAI_MODEL=gpt-3.5-turbo
 GMAIL_SENDER=email@gmail.com #inserir o email que enviará os resumos
 GMAIL_SENDER_PASSWORD=senha-email-app #inserir senha do email
 
-LLM_PROVIDER=OPENAI #a depender da LLM que for usar, mudar entre OPENAI ou GEMINI
+LLM_PROVIDER=GEMINI #a depender da LLM que for usar, mudar entre OPENAI ou GEMINI
 ```
 
 **Importante:**  
 - Use **senha de aplicativo** do Gmail, que pode ser configurada na aba de Segurança > Senhas de App.
 - IMPORTANTE: A **senha de aplicativo** só é válida se o email usado tiver autenticação de dois fatores ativada.
-- Configure seu acesso às APIs da Gemini/OpenAI.
+- Configure seu acesso às APIs da Gemini/OpenAI com quota suficiente.
 
 ---
 
