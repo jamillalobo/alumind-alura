@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Detalhes do Feedback</h1>
+
+    <p><strong>ID:</strong> {{ feedback.id }}</p>
+    <p><strong>Sentimento:</strong> {{ feedback.sentiment }}</p>
+    <p><strong>Texto:</strong> {{ feedback.feedback_text }}</p>
+
+    <h2>Features sugeridas:</h2>
+    <ul>
+        {% for feature in feedback.requested_features %}
+            <li><strong>{{ feature['code'] }}</strong>: {{ feature['reason'] }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="{{ url_for('report.get_report') }}">Voltar ao Relatório</a></p>
+</body>
+</html>
