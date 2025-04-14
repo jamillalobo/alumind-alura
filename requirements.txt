@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+python-dotenv
+langchain-google-genai
+langchain-openai
+pydantic
+psycopg2-binary
+torch --pre --index-url https://download.pytorch.org/whl/nightly/cpu
