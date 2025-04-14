@@ -20,8 +20,6 @@ class EmailController:
             top_features=summary["top_features"]
         )
 
-        print(f"Email Text: {email_text}")
-
         recipients = ["email-receiver@gmail.com"]  
         subject = "Resumo Semanal de Feedbacks - AluMind"
         self.email_service.send_email(subject, recipients, email_text)

@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_mail import Mail
 from flask_migrate import Migrate
 from app.extensions import db
 from dotenv import load_dotenv
