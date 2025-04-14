@@ -17,7 +17,6 @@ class FeedbackController:
 
             feedback_request = FeedbackRequest(**data)
 
-            print(f"Analisando feedback: {feedback_request.feedback}")
             analysis = self.analyzer.analyze_feedback(feedback_request.feedback)
 
             if not isinstance(analysis, dict):

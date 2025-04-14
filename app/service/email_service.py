@@ -65,9 +65,6 @@ class EmailService:
         sender_email = os.getenv("GMAIL_SENDER")  
         sender_password = os.getenv("GMAIL_SENDER_PASSWORD")
 
-        print(f"Sender Email: {sender_email}")
-        print(f"Sender Password: {sender_password}")
-
         message = MIMEMultipart()
         message["From"] = sender_email
         message["To"] = ", ".join(recipients)
