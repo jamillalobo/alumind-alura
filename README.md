@@ -1,4 +1,4 @@
-# 📄 README.md — AluMind Analyzer
+# Alumind Analyzer
 
 ## ✨ Sobre o Projeto
 
